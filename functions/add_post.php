@@ -12,7 +12,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     if ($result) {
         $id=$pdo->lastInsertId();
-        echo json_encode(['success' => $id]);
+        echo json_encode(['success' => true, 'id' => $id]);
     } else {
         echo json_encode(['success' => false]);
     }

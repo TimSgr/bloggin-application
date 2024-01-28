@@ -120,10 +120,10 @@ function addPost(content, username) {
     .then(response => response.json())
     .then(data => {
         if (data.success) {
-            console.log(data["success"]);
+            console.log(data["id"]);
             console.log('Post hinzugefügt');
             // Füge den neuen Post direkt zum DOM hinzu, anstatt alle Posts neu zu laden
-            addPostToDOM(content, username, data["success"]) ;
+            addPostToDOM(content, username, data["id"]) ;
         }
     })
     .catch(error => console.error('Fehler:', error));
