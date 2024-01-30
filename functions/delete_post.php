@@ -15,7 +15,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             echo json_encode(['success' => false]);
         }
     } else {
-        // Senden einer Fehlermeldung, wenn keine post_id übergeben wurde
         echo json_encode(['success' => false, 'error' => 'Post ID is required']);
     }
 }

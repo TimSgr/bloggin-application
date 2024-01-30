@@ -25,19 +25,25 @@ $stmt = $pdo->query("CREATE TABLE IF NOT EXISTS posts (
     <main class="interface">
         <div class="container">
             <div class="row">
+                <div class="col-md-12 text-align-center">
+                    Microblogging System
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
                 <div class="col-md-3 sidebar sticky">
                     <div class="">
                         Sidebar Content
                     </div>
                 </div>
                 <div class="col-md-6 main_content">
-                    Hier ist aber der eigentliche Content
                     <form id="submit_form">
                         <div class="form-group">
                             <div class="input_section">
                                 <textarea class="form-control" rows="3" placeholder="your content"></textarea>
                             </div>
-                            <button class="btn btn-primary" type="submit">Senden</button>
+                            <button class="btn btn-primary" type="submit">Posten</button>
                         </div>
                     </form>
                     <div class="container">
