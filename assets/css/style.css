@@ -1,3 +1,8 @@
+main{
+    background-color: #01538a;
+    height: 100vh;
+    color: white;
+}
 textarea{
     resize: none;
     padding: 10px;
@@ -6,11 +11,18 @@ textarea{
     border-color: red;
 }
 .post{
-    border: 1px solid black;
+    border-bottom: 2px solid black;
     border-radius: 5px;
+    padding: 10px 20px;
+    color: white;
+    background-color: #032e4b;
 }
+.post .content{
+    font-size: 20px;
+    color:white;
+}
+.post button{}
 .full_content{
-    gap: 20px;
     margin-top: 20px;
 }
 #submit_form button, #login_form button{
@@ -24,4 +36,23 @@ textarea{
 }
 .interface{
     position: relative;
+}
+.post .action_like .like_icon{
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    mask: url("../../assets/img/heart-svgrepo-com.svg") no-repeat center / contain;
+    content: "";
+}
+.post .multiple_buttons{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-top: 10px;
+}
+.post .action_like{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
 }

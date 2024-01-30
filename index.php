@@ -6,6 +6,7 @@ $stmt = $pdo->query("CREATE TABLE IF NOT EXISTS posts (
     id INT AUTO_INCREMENT PRIMARY KEY,
     content TEXT NOT NULL,
     username VARCHAR(255) NOT NULL,
+    likes int DEFAULT 0,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );");
 ?>
@@ -25,7 +26,9 @@ $stmt = $pdo->query("CREATE TABLE IF NOT EXISTS posts (
         <div class="container">
             <div class="row">
                 <div class="col-md-3 sidebar sticky">
-                    Hier sieht man ganz ganz viel Content
+                    <div class="">
+                        Sidebar Content
+                    </div>
                 </div>
                 <div class="col-md-6 main_content">
                     Hier ist aber der eigentliche Content
